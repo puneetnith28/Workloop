@@ -1,0 +1,76 @@
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Global gradient backgrounds */
+.gradient-bg-purple {
+  background: linear-gradient(135deg, #9b87f5 0%, #7E69AB 100%);
+}
+
+.gradient-bg-blue {
+  background: linear-gradient(90deg, hsla(221, 45%, 73%, 1) 0%, hsla(220, 78%, 29%, 1) 100%);
+}
+
+.gradient-bg-green {
+  background: linear-gradient(90deg, hsla(59, 86%, 68%, 1) 0%, hsla(134, 36%, 53%, 1) 100%);
+}
+
+.gradient-bg-orange {
+  background: linear-gradient(90deg, hsla(39, 100%, 77%, 1) 0%, hsla(22, 90%, 57%, 1) 100%);
+}
+
+.gradient-bg-pink {
+  background: linear-gradient(90deg, hsla(277, 75%, 84%, 1) 0%, hsla(297, 50%, 51%, 1) 100%);
+}
+
+/* Card with gradient background */
+.gradient-card {
+  background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.8), rgba(240, 240, 250, 0.4));
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.gradient-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Animation classes */
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(155, 135, 245, 0.4);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(155, 135, 245, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(155, 135, 245, 0);
+  }
+}
+
+.pulse-animation {
+  animation: pulse 2s infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.float-animation {
+  animation: float 3s ease-in-out infinite;
+}
