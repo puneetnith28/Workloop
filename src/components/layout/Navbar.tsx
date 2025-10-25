@@ -241,21 +241,21 @@ const Navbar = () => {
             {isLandingPage ? (
               <>
                 <Link
-                  to="#features"
+                  to="/features"
                   className="block px-3 py-2 rounded-md text-muted-foreground hover:bg-accent hover:text-foreground"
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   Features
                 </Link>
                 <Link
-                  to="#how-it-works"
+                  to="/how-it-works"
                   className="block px-3 py-2 rounded-md text-muted-foreground hover:bg-accent hover:text-foreground"
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   How It Works
                 </Link>
                 <Link
-                  to="#pricing"
+                  to="/pricing"
                   className="block px-3 py-2 rounded-md text-muted-foreground hover:bg-accent hover:text-foreground"
                   onClick={() => setMobileMenuOpen(false)}
                 >
